@@ -1,3 +1,8 @@
+/* FONTS -----------------------------------------
+font-family: 'Cabin', sans-serif;
+font-family: 'Rokkitt', serif;
+------------------------------------------------*/
+
 *,
 *::before,
 *::after {
@@ -10,19 +15,37 @@ html,
 body,
 .wrapper {
   height: 100%;
+  font-size: 10px;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Rokkitt', serif;
+}
+
+h1, h3 {
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  letter-spacing: 1px;  
 }
 
 nav {
   background-color: #5793fd;
   color: #ffffff;
-  height: 80px;
-  padding: 10px;
-  line-height: 3;
-  font-size: 1.2rem;
+  padding: 0 2rem !important;
+  align-items: center !important;
+}
+
+nav h1 {
+  font-size: 4rem;
+  text-align: left;
+}
+
+nav button {
+  min-width: 50%;
+  text-align: center;
+  align-self: center;
+  background-color: red;
+  border-radius: 1rem;
 }
 
 a,
@@ -31,9 +54,11 @@ a:active,
 a:visited {
   text-decoration: none;
   color: inherit;
+  letter-spacing: 1px;
 }
 
 header {
+  border: red solid 2px !important;
   height: 150px;
   padding-top: 80px;
   text-align: center;
@@ -41,15 +66,16 @@ header {
 }
 
 header h1 {
-  transform: skewX(-2deg);
+  font-size: 3rem;
 }
 
 select {
+  font-family: 'Rokkitt', serif;
   display: block;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  font-size: 1rem;
+  font-size: 1.75rem;
   border-radius: 6px;
   border: 1px solid #aaa;
   width: 100%;
@@ -392,22 +418,22 @@ form > button {
   text-align: center;
 }
 
-.prev-workout .buttons {
+/* .prev-workout .buttons {
   display: flex;
   height: 75px;
   margin-top: 30px;
-}
+} */
 
-.buttons .ui.button {
+/* .buttons .ui.button {
   margin: 0;
   width: 50%;
-}
+} */
 
 .ui.card h2 {
   padding: 10px;
 }
 
-.buttons .ui.button:first-child {
+/* .buttons .ui.button:first-child {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -417,7 +443,7 @@ form > button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-top-right-radius: 0;
-}
+} */
 
 .workout-type,
 .cardio-form,
