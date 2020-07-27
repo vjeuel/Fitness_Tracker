@@ -12,7 +12,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness", {
+   useNewUrlParser: true,
+   useUnifiedTopology: true
+});
 
 // Routes
 require("./routes/api-routes")(app);
