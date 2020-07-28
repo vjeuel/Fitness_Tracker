@@ -4,7 +4,7 @@ font-family: 'Rokkitt', serif;
 ------------------------------------------------*/
 :root {
   --db: #2D4059;
-  --lb: #344F73;
+  --lb: #4A96D9;
   --or: #F2A03D;
   --rd: #F23005;
   --wt: #f2f2f2;
@@ -34,7 +34,7 @@ body {
   margin: 0 auto;
 }
 
-h1, h3 {
+h1, h2, h3 {
   font-family: 'Cabin', sans-serif;
   text-align: center;
   letter-spacing: 1px;  
@@ -62,16 +62,17 @@ a:visited {
 }
 
 
-/* ALL HTML */
+/* ALL HTML -----------------------------------*/
 nav {
-  background-color: var(--db);
+  background: linear-gradient(45deg, var(--lb) 0%, var(--db) 75%);
   color: var(--wt);
   padding: 3rem !important;
   align-items: center !important;
+  border-bottom: 5px solid var(--or);
 }
 
 nav h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 nav .button {
@@ -82,25 +83,78 @@ nav .button {
   border-radius: 1rem;
   box-shadow: 0 0 4px 2px var(--db),
               0 0 12px 4px var(--or) !important;
-            }
-            
+}
+
 nav .button:hover {
   background-color: var(--db) !important;
   color: var(--wt) !important;
   box-shadow: 0 0 12px 4px var(--wt) !important;
-  transition: ease-in-out 0.5s !important;              
+  transition: ease-in-out 0.5s !important;           
 }
 
-
-header {
-  height: 150px;
-  padding-top: 80px;
-  text-align: center;
-  font-size: 1.5rem;
+/* ALL HTML -----------------------------------*/
+.tracker-box{
+  /* background: linear-gradient(-45deg, var(--lb) 0%, var(--db) 75%); */
+  width: 60%;
+  margin: 10rem auto 3rem;
+  padding: 2rem 0;
+  border-radius: 1rem;
 }
 
-header h1 {
+.h2-box {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.box-line {
+  background-color: var(--or);
+  height: 5px;
+  border-radius: 1rem;
+}
+
+.h2-box h2 {
   font-size: 3rem;
+  background-color: rgba(242, 160, 60, 0.25);
+  color: var(--wt);
+  width: 95%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.workout, .exercise {
+  background-color: rgba(242, 242, 242, 0.75);
+  width: 95%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.workout h3, .exercise h3 {
+  font-size: 2.5rem !important;
+  color: var(--db);
+}
+
+.workout-stats {
+  font-family: 'Rokkitt', serif;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.workout .button {
+  text-align: center;
+  align-self: center;
+  background-color:var(--or) !important;
+  color: var(--db) !important;
+  margin: 0 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 4px 2px var(--wt),
+              0 0 12px 4px var(--db) !important;
+}
+
+.workout .button:hover {
+  background-color: var(--wt) !important;
+  color: var(--db) !important;
+  box-shadow: 0 0 12px 4px var(--db) !important;
+  transition: ease-in-out 0.5s !important;           
 }
 
 select {
@@ -153,12 +207,6 @@ input {
   width: 100%;
   padding: 10px;
   background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
-}
-
-.card.m-auto,
-.m-auto {
-  margin: 0 auto;
-  width: 500px;
 }
 
 form .workout-type,
@@ -373,10 +421,6 @@ form::after {
   margin-top: 20px;
 }
 
-.workout .ui.card {
-  padding-top: 25px;
-}
-
 .prev-workout {
   text-align: center;
 }
@@ -404,14 +448,14 @@ form::after {
 
 /* COLORS -------------------------------------*/
 /* Color Theme Swatches in Hex */
-.Graphic-Design-1-hex { color: #344F73; }
+.Eternity-Legends-Character-Overview-1-hex { color: #4A96D9; }
 .Graphic-Design-2-hex { color: #2D4059; }
 .Graphic-Design-3-hex { color: #F2A03D; }
 .Graphic-Design-4-hex { color: #F23005; }
 .Graphic-Design-5-hex { color: #F2F2F2; }
 
 /* Color Theme Swatches in RGBA */
-.Graphic-Design-1-rgba { color: rgba(51, 78, 114, 1); }
+.Eternity-Legends-Character-Overview-1-rgba { color: rgba(73, 149, 216, 1); }
 .Graphic-Design-2-rgba { color: rgba(44, 63, 89, 1); }
 .Graphic-Design-3-rgba { color: rgba(242, 160, 60, 1); }
 .Graphic-Design-4-rgba { color: rgba(242, 48, 4, 1); }

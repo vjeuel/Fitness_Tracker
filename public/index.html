@@ -12,33 +12,36 @@
 </head>
 
 <body>
+  <!-- Nav Bar -->
   <nav class="ui grid row">
     <h1 class="column sixteen wide">Fitness Tracker</h1>
     <a class="centered column fluid huge ui button" href="/" tabindex="0">tracker</a>
     <a class="centered column fluid huge ui button" href="/stats">dashboard</a>
   </nav>
-  <div class="workout">
+
+  <!-- Tracker Box -->
+  <div class="tracker-box">
     <header>
-      <h1>TRACKER</h1>
+      <div class="h2-box">
+        <div class="box-line"></div>
+        <h2>TRACKER</h2>
+        <div class="box-line"></div>
+      </div>
     </header>
-    <div class="ui container workout">
-      <div class="ui raised card m-auto">
-        <div class="prev-workout">
-          <h3>Last Workout</h3>
-          <div>
-            <div class="workout-stats"></div>
-            <div class="buttons">
-              <a id="continue-btn" href="/exercise?" class="huge ui blue button">Continue Workout</a>
-              <a href="/exercise" class="huge positive ui button">New Workout</a>
-            </div>
-          </div>
-        </div>
-        <div class="new-workout">
-          <h3>Create Your First Workout</h3>
-        </div>
+    
+    <div class="box-line"></div>
+    <div class="workout prev-workout">
+      <h3>Last Workout</h3>
+      <div class="workout-stats"></div>
+      <div class="buttons">
+        <a id="continue-btn" href="/exercise?" class="huge ui button">Continue Workout</a>
+        <a href="/exercise" class="huge ui button">New Workout</a>
+      </div>
+      <div class="new-workout">
+      <h3>Create Your First Workout</h3>
       </div>
     </div>
-  </div>
+    <div class="box-line"></div>
 
   <div id="toast">
     Workout Added Successfully!
