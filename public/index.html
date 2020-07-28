@@ -7,19 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,700&family=Rokkitt:wght@500&display=swap"> 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <title>Fitness Tracker</title>
 </head>
 
 <body>
   <nav class="ui grid row">
-    <h1 class="column ten wide column">Fitness Tracker</h1>
-    <div class="column six wide ui buttons">
-      <button class="huge right floated ui button" href="/">tracker</button>
-      <button class="huge right floated ui button" href="/stats">dashboard</button>
-    </div>
+    <h1 class="column sixteen wide">Fitness Tracker</h1>
+    <a class="centered column fluid huge ui button" href="/" tabindex="0">tracker</a>
+    <a class="centered column fluid huge ui button" href="/stats">dashboard</a>
   </nav>
-  <div class="wrapper workout">
+  <div class="workout">
     <header>
       <h1>TRACKER</h1>
     </header>
@@ -41,7 +39,7 @@
       </div>
     </div>
   </div>
-  </div>
+
   <div id="toast">
     Workout Added Successfully!
   </div>
