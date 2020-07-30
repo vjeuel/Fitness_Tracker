@@ -51,7 +51,7 @@ a:visited {
 }
 
 .button {
-  min-width: 10rem;
+  min-width: 15rem;
   max-width: 30rem;
   width: 20rem !important;
   display: block;
@@ -137,6 +137,12 @@ nav .button:hover {
   font-family: 'Rokkitt', serif;
   font-size: 2rem;
   margin: 2rem 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+
 }
 
 .buttons .button {
@@ -264,6 +270,7 @@ form label {
   font-size: 1.75rem;
   width: 150px;
   margin-top: 0.7rem;
+  margin-right: 1rem;
 }
 
 form > button {
@@ -429,6 +436,20 @@ form::after {
     right: -320px;
   }
 }
+
+/* STATS HTML -----------------------------------*/
+.stats-box {
+  background-color: rgba(242, 242, 242, 0.75);
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.stats-box h3 {
+  font-size: 2.5rem !important;
+  color: var(--db);
+}
+
 
 /* COLORS -------------------------------------*/
 /* Color Theme Swatches in Hex */
