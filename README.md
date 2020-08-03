@@ -2,7 +2,9 @@
 <h1 align="center"></h1>
 
 <p align="center">
-  <img src="./public/img/banner.png" height="100%">
+  <a href="https://guarded-stream-70696.herokuapp.com/?id=5f2739de7de93a001792431d">
+    <img src="./public/img/banner.png" height="100%">
+  </a>
 </p>
 
 You can access the app [here](https://guarded-stream-70696.herokuapp.com/?id=5f2739de7de93a001792431d)
