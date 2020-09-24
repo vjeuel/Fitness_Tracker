@@ -450,6 +450,7 @@ form::after {
 	color: var(--db);
 }
 
+/* MEDIA QUERY ----------------------------------*/
 @media (max-width: 600px) {
 	body {
 		background-position: center 100px;
