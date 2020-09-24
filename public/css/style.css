@@ -63,6 +63,16 @@ a:visited {
 	padding: 1rem;
 }
 
+@media (max-width: 600px) {
+	body {
+		height: 100% !important;
+	}
+
+	h1 {
+		font-size: 4.5rem !important;
+	}
+}
+
 /* ALL HTML -----------------------------------*/
 nav {
 	background: linear-gradient(45deg, var(--lb) 0%, var(--db) 75%);
