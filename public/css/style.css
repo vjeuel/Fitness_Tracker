@@ -95,33 +95,10 @@ nav .button:hover {
 
 /* ALL HTML -----------------------------------*/
 .tracker-box {
-	width: 60%;
+	width: 70%;
 	margin: 10rem auto 3rem;
 	padding: 2rem 0;
 	border-radius: 1rem;
-}
-
-@media (max-width: 600px) {
-	body {
-		background-position: center 100px;
-	}
-
-	h1 {
-		font-size: 4.5rem !important;
-	}
-
-	nav .button {
-		width: 300px !important ;
-		font-size: 1.5rem !important;
-	}
-
-	nav .button:nth-child(even) {
-		margin-bottom: 20px !important;
-	}
-
-	.tracker-box {
-		width: 95%;
-	}
 }
 
 .h2-box {
@@ -471,6 +448,37 @@ form::after {
 .stats-box h3 {
 	font-size: 2.5rem !important;
 	color: var(--db);
+}
+
+@media (max-width: 600px) {
+	body {
+		background-position: center 100px;
+	}
+
+	h1 {
+		font-size: 4.5rem !important;
+	}
+
+	nav .button {
+		width: 300px !important ;
+		font-size: 1.5rem !important;
+	}
+
+	nav .button:nth-child(even) {
+		margin-bottom: 2rem !important;
+	}
+
+	.tracker-box {
+		width: 95%;
+	}
+
+	.workout .resp-button {
+		flex-wrap: wrap !important;
+		max-width: 12rem !important;
+		width: 10rem !important;
+		padding: 1rem !important;
+		margin: 0.5rem;
+	}
 }
 
 /* COLORS -------------------------------------*/
