@@ -1,11 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const morgan = require("morgan");
+const compression = require("compression")
 
 const PORT = process.env.PORT || 3001;
 
 const app = express();
 
+app.use(compression());
 app.use(morgan("dev"));
 
 app.use(express.urlencoded({ extended: true }));
