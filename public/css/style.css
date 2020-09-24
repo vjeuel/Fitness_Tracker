@@ -20,12 +20,13 @@ font-family: 'Rokkitt', serif;
 
 html {
 	font-size: 10px;
+	height: 100vh;
 }
 
 body {
 	background-image: url(../img/spencer-davis-0ShTs8iPY28-unsplash.jpg);
 	background-size: cover;
-	background-position: top center;
+	background-position: center top;
 	background-repeat: no-repeat;
 	font-family: 'Rokkitt', serif;
 	background-color: none;
@@ -63,16 +64,6 @@ a:visited {
 	padding: 1rem;
 }
 
-@media (max-width: 600px) {
-	body {
-		height: 100% !important;
-	}
-
-	h1 {
-		font-size: 4.5rem !important;
-	}
-}
-
 /* ALL HTML -----------------------------------*/
 nav {
 	background: linear-gradient(45deg, var(--lb) 0%, var(--db) 75%);
@@ -102,7 +93,23 @@ nav .button:hover {
 	transition: ease-in-out 0.5s !important;
 }
 
+/* ALL HTML -----------------------------------*/
+.tracker-box {
+	width: 60%;
+	margin: 10rem auto 3rem;
+	padding: 2rem 0;
+	border-radius: 1rem;
+}
+
 @media (max-width: 600px) {
+	body {
+		background-position: center 100px;
+	}
+
+	h1 {
+		font-size: 4.5rem !important;
+	}
+
 	nav .button {
 		width: 300px !important ;
 		font-size: 1.5rem !important;
@@ -111,15 +118,10 @@ nav .button:hover {
 	nav .button:nth-child(even) {
 		margin-bottom: 20px !important;
 	}
-}
 
-/* ALL HTML -----------------------------------*/
-.tracker-box {
-	/* background: linear-gradient(-45deg, var(--lb) 0%, var(--db) 75%); */
-	width: 60%;
-	margin: 10rem auto 3rem;
-	padding: 2rem 0;
-	border-radius: 1rem;
+	.tracker-box {
+		width: 95%;
+	}
 }
 
 .h2-box {
